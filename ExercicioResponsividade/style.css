@@ -1,64 +1,75 @@
-body{ 
-    background-color: rgb(0, 0, 0); 
+body {
+    background-color: rgb(0, 0, 0);
     margin: 0;
-    
-}  
 
-header{ 
-width: 100%;
-height: 7vh;
-background-color: red;
-display: flex;
-align-items: center;
-justify-content: space-between;
 }
 
-header img { 
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
     height: 80%;
 
 }
 
-header nav{ width: 50%;
-display: flex;
-justify-content: space-evenly;
+header nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
-.LinkMenu{ 
-    color: rgb(0, 0, 0); 
+.LinkMenu {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    text-transform: uppercase; /* usase uppercase para deixar as letras maisculas mesmo que tenha escrevido as minuscula */
-    
+    text-transform: uppercase;
+    /* usase uppercase para deixar as letras maisculas mesmo que tenha escrevido as minuscula */
+
+}
+
+.p1 { 
+    background-image:url(img/Design\ sem\ nome.png); 
+    background-size: 100%;
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 1px;
+}
+
+.p1 .titulo { 
+    width: 40%;
+    height: 100%;
+    text-align: center;
 } 
 
+.titulo h1 { 
+    font-size: 80px;
+    color:aliceblue; 
+    text-transform: uppercase;
+} 
 
-/*
-
-@media screen and (max-width: 998px) {
-    .banner {height:480px; padding: 0px 20px} 
-    .banner .texto {font-size: 24px;}
-    .banner h1 {font-size: 28px;} 
-    .banner p {font-size: 14px; margin-top:90px;}
-    .banner img {width:40%; height:300px ;margin-top: 90px ;}  
-    .banner a {padding: 3px; background-color: rgb(0,0,0 ); font-size: 12px; color: rgb(150, 2, 248) ; text-decoration: none;} } 
-    
-    @media screen and (max-width: 768px) {
-        .banner { padding: 0px 20px 20px} 
-        .banner .texto {width:100%; text-align: center; margin-top: 20px;}
-        .banner h1 {font-size: 18px;} 
-        .banner p {font-size: 12px; margin-top:20px;}
-        .banner img {width:100%; height:300px ;margin-top: 20px; float: none;} }  
+.titulo h2 { 
+    font-size: 40px; 
+    color: aliceblue;
+}
 
 
-        .texto h1{ 
-            text-align: center;
-            color: rgb(0, 0, 0);
-        } 
-        
-        .texto p{  
-            text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: rgb(0, 0, 0);
-        }  
 
-   
+@media screen and (max-width: 768px) {
+    .hamburguer {
+        display: inline;
+    }
+
+    header nav {
+        display: inline;
+    } 
+    .p1 .titulo{ width: 100%;}
+    .titulo h1 { font-size: 60px; }
+    .titulo h2 { font-size: 30px;}
+}
